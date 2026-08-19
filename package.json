@@ -8,8 +8,9 @@
   "main": "index.js",
   "keywords": [],
   "scripts": {
-    "test": "node scr/index.js",
-    "dev": "nodemon src/index.js"
+    "test": "node src/index.js",
+    "dev": "nodemon src/index.js",
+     "start": "node src/index.js"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
