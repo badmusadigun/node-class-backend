@@ -7,7 +7,7 @@ const authCheck = (req, res, next) => {
 
     if (!bearerToken) {
       return res
-        .status(404)
+        .status(401)
         .json({ status: false, message: "Token not found" });
     }
 
