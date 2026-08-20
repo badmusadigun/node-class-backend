@@ -16,12 +16,12 @@ const { testNodeMailer } = require("./utils/mailer");
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(cors({
-  origin:"https://react-class-frontend-henna.vercel.app/",
+  origin:"https://react-class-frontend-henna.vercel.app",
   credentials: true,
 }));
 app.use("/api/v1/cart", cartRoute);
 
-//
+
 const port = envobj.port;
 
 const product = [
