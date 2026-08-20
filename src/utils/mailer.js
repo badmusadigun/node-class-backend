@@ -1,10 +1,9 @@
 const nodeMailer = require("nodemailer");
 const envobj = require("../config/env");
 const transporter = nodeMailer.createTransport({
-  service: "gmail",
-  //  host: "smtp.gmail.com",
-  // port: 587,
-  // secure: false,
+   host: "smtp.gmail.com",
+  port: 587,
+  secure: false,
   auth: {
     user: envobj.gmailAddress,
     pass: envobj.gmailAppPassword,
