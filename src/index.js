@@ -15,7 +15,10 @@ const cartRoute = require("./routes/cart")
 const { testNodeMailer } = require("./utils/mailer");
 app.use(express.json());
 app.use(morgan("dev"));
-app.use(cors());
+app.use(cors({
+  origin:"https://react-class-frontend-henna.vercel.app/",
+  credentials: true,
+}));
 app.use("/api/v1/cart", cartRoute);
 
 //
